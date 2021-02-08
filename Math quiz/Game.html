@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BootStrap Links-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--End Of BootStrap Links-->
+    <!--Style Sheet For Game.html -->
+    <link rel="stylesheet" href="game.css">
+    <title>Guess The Answer!</title>
+</head>
+<body onload="display()">
+  <!--Scores-->
+  <label id="player1score">Player 1's score goes here</label>
+  <br>
+  <br>
+  <label id="player2score">Player 2's score goes here</label>  
+  <!--End of scores-->
+    <div class="overlay container" id="container">
+      <br>
+      <br>
+      <br>
+      <br>
+      <center>
+        <div class="container" id="box">
+          <div id="question_box">
+            <h1>Guess The Correct Answer!</h1>
+            <br>
+            <br>
+            <p id="question_player">Question Turn - </p>
+            <br>
+            <br>
+            <div id="answer_box"></div>
+            <br>
+            <br>
+            <div id="question_box">
+            <input type="number" id="number_1" class="numbers">
+            <br>
+            <br>
+            <input type="number" id="number_2" class="numbers">
+            <br>
+            <br>
+            <button onclick="send()" id="send_button">Send</button>
+            </div>
+          </div>
+        </div>
+      </center>
+    </div>
+</body>
+<script src="game.js"></script>
+</html>

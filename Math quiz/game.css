@@ -1,0 +1,13 @@
+#check_button{
+    display: none;
+}
+#answer_box{
+    background: grey;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+}
+body{
+    background-image: url("gamee.jpg");
+    background-size: cover;
+} 
